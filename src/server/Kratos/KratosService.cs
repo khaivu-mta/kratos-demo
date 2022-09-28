@@ -41,7 +41,7 @@ namespace KratosDemo.Server.Kratos
                 throw new InvalidOperationException("Session is not active.");
 
 
-            return whoami.Identity.Id;
+            return whoami.Identity.Traits.Email;
         }
     }
 }
